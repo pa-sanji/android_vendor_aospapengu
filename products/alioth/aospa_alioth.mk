@@ -12,6 +12,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from the custom device configuration.
 $(call inherit-product, device/xiaomi/alioth/device.mk)
 
+# Background blur. envsetup.mk parses product_config.mk before board_config.mk,
+# so TARGET_USES_BLUR from BoardConfig.mk is not visible while aospa-target.mk
+# is evaluated. Publish it in the product context first, otherwise the
+# ro.custom.blur.enable / ro.surface_flinger.supports_background_blur product
+# properties are never emitted and WindowManager keeps window blur disabled.
+TARGET_USES_BLUR := true
+
 # Inherit from the AOSPA configuration.
 $(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
