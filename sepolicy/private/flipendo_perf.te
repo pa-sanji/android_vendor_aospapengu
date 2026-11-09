@@ -1,0 +1,4 @@
+# Allow Flipendo to use the perf HAL (stock HIDL 2.2 backend).
+# flipendo is a system_ext private domain, and vendor_hal_perf_client is a
+# public vendor attribute, so the rule belongs in system_ext private policy.
+hal_client_domain(flipendo, vendor_hal_perf)

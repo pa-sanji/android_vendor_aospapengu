@@ -25,3 +25,6 @@ allow updater_app ota_package_file:file create_file_perms;
 get_prop(updater_app, default_prop)
 get_prop(updater_app, build_prop)
 get_prop(updater_app, custom_version_prop)
+
+# Allow the updater to use the perf HAL (stock HIDL 2.2 backend).
+hal_client_domain(updater_app, vendor_hal_perf)
