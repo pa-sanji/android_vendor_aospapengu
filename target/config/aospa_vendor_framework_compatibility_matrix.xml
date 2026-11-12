@@ -5,7 +5,7 @@
 <compatibility-matrix version="1.0" type="framework">
     <!-- Power -->
     <hal format="aidl" optional="true">
-        <name>vendor.aospa.power</name>
+        <name>vendor.neko.power</name>
         <interface>
             <name>IPowerFeature</name>
             <instance>default</instance>

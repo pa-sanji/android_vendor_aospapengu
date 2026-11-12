@@ -5,12 +5,12 @@
 
 #pragma once
 
-#include <aidl/vendor/aospa/power/BnPowerFeature.h>
+#include <aidl/vendor/neko/power/BnPowerFeature.h>
 #include <linux/input.h>
 
 namespace aidl {
 namespace vendor {
-namespace aospa {
+namespace neko {
 namespace power {
 
 class PowerFeature : public BnPowerFeature {
@@ -23,6 +23,6 @@ class PowerFeature : public BnPowerFeature {
 };
 
 }  // namespace power
-}  // namespace aospa
+}  // namespace neko
 }  // namespace vendor
 }  // namespace aidl

@@ -168,7 +168,7 @@ PRODUCT_COPY_FILES += \
 
 # Gestures
 PRODUCT_PACKAGES += \
-    vendor.aospa.power-service
+    vendor.neko.power-service
 
 # Keyboard: the PenguinOS LatinIME instead of Gboard
 ifeq ($(TARGET_USES_PENGUIN_LATINIME), true)

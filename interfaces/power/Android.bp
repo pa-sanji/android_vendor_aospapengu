@@ -4,10 +4,10 @@
 //
 
 aidl_interface {
-    name: "vendor.aospa.power",
+    name: "vendor.neko.power",
     vendor_available: true,
     srcs: [
-        "vendor/aospa/power/*.aidl",
+        "vendor/neko/power/*.aidl",
     ],
     stability: "vintf",
     backend: {
@@ -15,5 +15,12 @@ aidl_interface {
             enabled: false,
         },
     },
-    versions: ["1"],
+    frozen: true,
+    versions_with_info: [
+        {
+            version: "1",
+            imports: [],
+        },
+    ],
+
 }

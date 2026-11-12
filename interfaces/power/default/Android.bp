@@ -92,17 +92,17 @@ powerfeature_cc_defaults {
 }
 
 cc_binary {
-    name: "vendor.aospa.power-service",
+    name: "vendor.neko.power-service",
     defaults: ["powerfeature_defaults"],
     relative_install_path: "hw",
-    init_rc: ["vendor.aospa.power-service.rc"],
-    vintf_fragments: ["vendor.aospa.power.xml"],
+    init_rc: ["vendor.neko.power-service.rc"],
+    vintf_fragments: ["vendor.neko.power.xml"],
     vendor: true,
     shared_libs: [
         "libbase",
         "libbinder_ndk",
         "liblog",
-        "vendor.aospa.power-V1-ndk",
+        "vendor.neko.power-V1-ndk",
     ],
     srcs: [
         "PowerFeature.cpp",

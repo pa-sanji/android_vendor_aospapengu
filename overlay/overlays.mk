@@ -5,14 +5,14 @@
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AOSPABlackThemeOverlay \
-    AOSPAFrameworksOverlay \
-    AOSPAImmersiveNavigationOverlay \
-    AOSPANetworkStackOverlay \
-    AOSPANetworkStackMainlineOverlay \
-    AOSPASettingsOverlay \
-    AOSPASettingsProviderOverlay \
-    AOSPASystemUIOverlay \
+    BlackThemeOverlay \
+    FrameworksOverlay \
+    ImmersiveNavigationOverlay \
+    NetworkStackOverlay \
+    NetworkStackMainlineOverlay \
+    SettingsOverlay \
+    SettingsProviderOverlay \
+    SystemUIOverlay \
     FontGoogleSansOverlay \
     FontHarmonySansOverlay \
     FontInterOverlay \

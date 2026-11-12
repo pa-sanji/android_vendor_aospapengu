@@ -1,5 +1,5 @@
 # AOSPA Power HAL
-vendor.aospa.power.IPowerFeature/default    u:object_r:hal_power_service:s0
+vendor.neko.power.IPowerFeature/default    u:object_r:hal_power_service:s0
 
 # DC Dimming
 dc_dim                                      u:object_r:dc_dimming_service:s0
